@@ -1,0 +1,10 @@
+<%- include('./partials/header.ejs');%>
+<h1>post</h1>
+
+<% for(let i=0;i< posts.length;i++){ %>
+    <article>
+        <h1><%= posts[i].title%></h1>
+        <p><%= posts[i].body%></p>
+    </article>
+<% }%>
+<%- include('./partials/footer');%>
